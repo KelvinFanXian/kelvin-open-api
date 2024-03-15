@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: kelvin-open-api
+
+  datasource:
+    url: jdbc:postgresql://192.168.6.154:5432/yunma2
+    username: postgres
+    password: pisen@2024
+    driver-class-name: org.postgresql.Driver
