@@ -7,3 +7,15 @@ spring:
     username: postgres
     password: pisen@2024
     driver-class-name: org.postgresql.Driver
+    
+  data:
+    redis:
+      host: 192.168.6.154 # 地址
+      port: 6379 # 端口
+      database: 8 # 数据库索引
+      password: 123456 # 密码，建议生产环境开启
+
+
+mybatis-plus:
+  type-aliases-package: com.kelvin.openapi.dal.dataobject
+  mapper-locations: classpath*:mapper/*.xml

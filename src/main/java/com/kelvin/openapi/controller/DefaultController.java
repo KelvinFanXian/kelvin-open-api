@@ -1,9 +1,12 @@
 package com.kelvin.openapi.controller;
 
 import cn.hutool.core.util.StrUtil;
+import com.kelvin.openapi.common.pojo.CommonResult;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import static com.kelvin.openapi.common.pojo.CommonResult.success;
 
 /**
  * @author: 范显
@@ -16,12 +19,12 @@ public class DefaultController {
     private String appName;
 
     @GetMapping
-    public String hello() {
-        return StrUtil.format("Welcome to {}", appName);
+    public CommonResult<String> hello() {
+        return success(StrUtil.format("Welcome to {}", appName));
     }
 
     @GetMapping("/now")
-    public Long now() {
-        return System.currentTimeMillis();
+    public CommonResult<Long> now() {
+        return success(System.currentTimeMillis());
     }
 }

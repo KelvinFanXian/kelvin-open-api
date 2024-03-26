@@ -1,8 +1,6 @@
-# 参考资料
-- [magic-api-doc](https://www.ssssssss.org/magic-api/pages/quick/start/)
-- [magic-api-plugin](https://gitee.com/ssssssss-team/magic-api-plugin) ⭕️
-- [freakchicken/db-api](https://gitee.com/freakchicken/db-api)
-- [linebyte/crabc](https://gitee.com/linebyte/crabc)
-- [histoneUp/yu-xi-admin](https://gitee.com/histoneUp/yu-xi-admin) ✅
-- 
-
+## 🎯目标
+- [ ] app+接口 调用频率限制
+- [ ] 全局限流和单个接口限流
+- [ ] IP白名单
+- [ ] 第三方接口对接鉴权
+- [ ] 多用户登录及用户授权
